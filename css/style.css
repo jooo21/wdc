@@ -517,7 +517,7 @@ section.con {
   width: 50%;
   height: 250px;
   position: relative;
-  right: 0%;
+  right: 10%;
   float: right;
   margin-bottom: 100px; }
   #con1 .inner ul.panel li {
@@ -730,7 +730,6 @@ section.con {
   clear: both; }
 #con2 .inner .notice {
   width: 35%;
-  height: 100%;
   float: left;
   box-sizing: border-box; }
   #con2 .inner .notice > p {
@@ -750,48 +749,40 @@ section.con {
       left: 0%;
       transform: translateY(-50%); }
   #con2 .inner .notice > ul {
-    width: 100%;
-    height: 100%; }
-    #con2 .inner .notice > ul li {
+    width: 100%; }
+    #con2 .inner .notice > ul > li {
       width: 100%;
       padding: 20px 70px 30px 10px;
       box-sizing: border-box; }
-      #con2 .inner .notice > ul li a {
+      #con2 .inner .notice > ul > li a {
         width: 100%;
-        height: 100%;
         display: block;
         color: #bbb;
         padding-bottom: 15px;
-        position: relative;
         transition: 0.5s; }
-        #con2 .inner .notice > ul li a p {
+        #con2 .inner .notice > ul > li a p {
           font: 300 18px/1 "Inter";
-          margin-bottom: 20px;
           transition: 0.5s; }
-        #con2 .inner .notice > ul li a span {
+        #con2 .inner .notice > ul > li a span {
           font: 200 12px/1 "Inter"; }
-        #con2 .inner .notice > ul li a svg {
-          position: absolute;
-          top: 50%;
-          left: 0px;
+        #con2 .inner .notice > ul > li a svg {
           width: 100%;
           height: 2px; }
-          #con2 .inner .notice > ul li a svg path {
+          #con2 .inner .notice > ul > li a svg path {
             fill: transparent;
             stroke-width: 2;
             stroke-dasharray: 300;
             stroke-dashoffset: 300;
             stroke: #eeeeee30;
             transition: 0.3s; }
-        #con2 .inner .notice > ul li a:hover p {
+        #con2 .inner .notice > ul > li a:hover p {
           color: #fff; }
-        #con2 .inner .notice > ul li a:hover svg path {
+        #con2 .inner .notice > ul > li a:hover svg path {
           stroke: #f2f2f2;
           stroke-dashoffset: 0;
           transition: 0.2s; }
 #con2 .inner .community {
   width: 65%;
-  height: 100%;
   float: left;
   box-sizing: border-box; }
   #con2 .inner .community > p {
@@ -811,8 +802,7 @@ section.con {
       left: 0%;
       transform: translateY(-50%); }
   #con2 .inner .community > ul {
-    width: 100%;
-    height: 100%; }
+    width: 100%; }
     #con2 .inner .community > ul::after {
       content: "";
       display: block;
@@ -829,7 +819,7 @@ section.con {
         height: 100%;
         border: 1px solid #eeeeee1e;
         color: #f2f2f2;
-        padding: 30px 20px;
+        padding: 0px;
         box-sizing: border-box;
         text-align: center;
         position: relative;
@@ -859,18 +849,21 @@ section.con {
           fill: #eeeeee1e;
           transition: stroke-dashoffset 0.5s, fill 0.5s 0.2s; }
         #con2 .inner .community > ul li a i {
-          font-size: 80px;
-          margin-bottom: 30px; }
-        #con2 .inner .community > ul li a p:nth-of-type(1) {
-          font: 300 16px/1 "Inter";
+          font-size: 70px;
           margin-bottom: 30px;
-          transition: 0.5s; }
-        #con2 .inner .community > ul li a p:nth-of-type(2) {
-          font: 100 13px/2 "Inter"; }
+          padding: 50px 0px 20px; }
+        #con2 .inner .community > ul li a p {
+          width: 90%;
+          margin-left: 5%; }
+          #con2 .inner .community > ul li a p:nth-of-type(1) {
+            font: 300 16px/1 "Inter";
+            margin-bottom: 30px;
+            transition: 0.5s; }
+          #con2 .inner .community > ul li a p:nth-of-type(2) {
+            font: 100 13px/2 "Inter"; }
 
 #footer {
   width: 100%;
-  height: 200px;
   text-align: center; }
   #footer .inner {
     width: 1180px;
@@ -939,6 +932,10 @@ section.con {
       position: relative;
       padding: 30px 0px;
       box-sizing: border-box; }
+      #footer .inner .bottom::after {
+        content: "";
+        display: block;
+        clear: both; }
       #footer .inner .bottom p {
         font: 200 14px/1 'Inter', sans-serif;
         color: #f2f2f2;
@@ -947,6 +944,10 @@ section.con {
       #footer .inner .bottom ul.list {
         width: 350px;
         float: left; }
+        #footer .inner .bottom ul.list::after {
+          content: "";
+          display: block;
+          clear: both; }
         #footer .inner .bottom ul.list > li {
           float: left;
           padding: 0px 20px;
@@ -971,6 +972,10 @@ section.con {
             color: #f2f2f2; }
       #footer .inner .bottom ul.icon {
         float: right; }
+        #footer .inner .bottom ul.icon::after {
+          content: "";
+          display: block;
+          clear: both; }
         #footer .inner .bottom ul.icon li {
           float: right;
           padding: 0px 10px;
@@ -1070,7 +1075,7 @@ section.con {
         top: 30px; }
 
   .gnbBtn {
-    left: 93%; }
+    right: 2%; }
 
   section.con .inner {
     width: 100%;
@@ -1121,7 +1126,8 @@ section.con {
       #con1 .inner .back p:nth-of-type(2) {
         font: 200 30px/1 "Inter"; }
     #con1 .inner ul.panel {
-      width: 60%; }
+      width: 55%;
+      right: 5%; }
       #con1 .inner ul.panel li {
         width: 200px;
         height: 200px;
@@ -1185,269 +1191,86 @@ section.con {
       #con1 .inner ul.circle li.on:nth-of-type(3) .bg {
         clip-path: circle(130% at 80% 10%); }
 
-  #con2 .inner::after {
-    content: "";
-    display: block;
-    clear: both; }
-  #con2 .inner .notice {
-    width: 35%;
-    height: 100%;
-    float: left;
-    box-sizing: border-box; }
-    #con2 .inner .notice > p {
-      font: 200 16px/1 "Inter";
-      color: #f2f2f2;
-      margin-bottom: 100px;
-      padding-left: 130px;
-      position: relative; }
-      #con2 .inner .notice > p::before {
-        content: "";
-        display: block;
-        width: 100px;
-        height: 1px;
-        background: #f2f2f2;
-        position: absolute;
-        top: 50%;
-        left: 0%;
-        transform: translateY(-50%); }
-    #con2 .inner .notice > ul {
-      width: 100%;
-      height: 100%; }
+  #con2 .inner {
+    padding: 80px 40px; }
+    #con2 .inner .notice {
+      width: 30%; }
+      #con2 .inner .notice > p {
+        margin-bottom: 50px;
+        padding-left: 60px; }
+        #con2 .inner .notice > p::before {
+          width: 50px; }
       #con2 .inner .notice > ul li {
-        width: 100%;
-        padding: 20px 70px 30px 10px;
-        box-sizing: border-box; }
-        #con2 .inner .notice > ul li a {
-          width: 100%;
-          height: 100%;
-          display: block;
-          color: #bbb;
-          padding-bottom: 15px;
-          position: relative;
-          transition: 0.5s; }
-          #con2 .inner .notice > ul li a p {
-            font: 300 18px/1 "Inter";
-            margin-bottom: 20px;
-            transition: 0.5s; }
-          #con2 .inner .notice > ul li a span {
-            font: 200 12px/1 "Inter"; }
-          #con2 .inner .notice > ul li a svg {
-            position: absolute;
-            top: 50%;
-            left: 0px;
-            width: 100%;
-            height: 2px; }
-            #con2 .inner .notice > ul li a svg path {
-              fill: transparent;
-              stroke-width: 2;
-              stroke-dasharray: 300;
-              stroke-dashoffset: 300;
-              stroke: #eeeeee30;
-              transition: 0.3s; }
-          #con2 .inner .notice > ul li a:hover p {
-            color: #fff; }
-          #con2 .inner .notice > ul li a:hover svg path {
-            stroke: #f2f2f2;
-            stroke-dashoffset: 0;
-            transition: 0.2s; }
-  #con2 .inner .community {
-    width: 65%;
-    height: 100%;
-    float: left;
-    box-sizing: border-box; }
-    #con2 .inner .community > p {
-      font: 200 16px/1 "Inter";
-      color: #f2f2f2;
-      margin-bottom: 100px;
-      position: relative;
-      padding-left: 150px; }
-      #con2 .inner .community > p::before {
-        content: "";
-        display: block;
-        width: 100px;
-        height: 1px;
-        background: #f2f2f2;
-        position: absolute;
-        top: 50%;
-        left: 0%;
-        transform: translateY(-50%); }
-    #con2 .inner .community > ul {
-      width: 100%;
-      height: 100%; }
-      #con2 .inner .community > ul::after {
-        content: "";
-        display: block;
-        clear: both; }
+        padding: 10px 30px 30px 5px; }
+        #con2 .inner .notice > ul li a p {
+          font: 300 14px/1 "Inter"; }
+        #con2 .inner .notice > ul li a span {
+          font: 200 12px/1 "Inter"; }
+    #con2 .inner .community {
+      width: 70%; }
+      #con2 .inner .community > p {
+        margin-bottom: 50px;
+        padding-left: 60px; }
+        #con2 .inner .community > p::before {
+          width: 50px;
+          height: 1px; }
       #con2 .inner .community > ul li {
-        width: 25%;
-        height: 350px;
-        padding: 0px 10px;
-        box-sizing: border-box;
-        float: left; }
-        #con2 .inner .community > ul li a {
-          display: block;
-          width: 100%;
-          height: 100%;
-          border: 1px solid #eeeeee1e;
-          color: #f2f2f2;
-          padding: 30px 20px;
-          box-sizing: border-box;
-          text-align: center;
-          position: relative;
-          transition: 0.5s; }
-          #con2 .inner .community > ul li a svg {
-            position: absolute;
-            left: 0%;
-            top: 0%;
-            width: 100%;
-            height: 100%; }
-            #con2 .inner .community > ul li a svg rect {
-              position: absolute;
-              left: 0%;
-              top: 0%;
-              width: 100%;
-              height: 100%;
-              stroke: #eee;
-              fill: transparent;
-              stroke-width: 2px;
-              stroke-dasharray: 1036;
-              stroke-dashoffset: 1036;
-              transition: stroke-dashoffset 0.2s, fill 0.5s; }
-          #con2 .inner .community > ul li a:hover p:nth-of-type(1) {
-            color: #f6492b; }
-          #con2 .inner .community > ul li a:hover svg rect {
-            stroke-dashoffset: 0;
-            fill: #eeeeee1e;
-            transition: stroke-dashoffset 0.5s, fill 0.5s 0.2s; }
-          #con2 .inner .community > ul li a i {
-            font-size: 80px;
-            margin-bottom: 30px; }
-          #con2 .inner .community > ul li a p:nth-of-type(1) {
-            font: 300 16px/1 "Inter";
-            margin-bottom: 30px;
-            transition: 0.5s; }
-          #con2 .inner .community > ul li a p:nth-of-type(2) {
-            font: 100 13px/2 "Inter"; }
+        height: 300px; }
+        #con2 .inner .community > ul li a svg {
+          display: none; }
+        #con2 .inner .community > ul li a:hover {
+          background: #eeeeee1e;
+          border: 1px solid #eee; }
+        #con2 .inner .community > ul li a i {
+          font-size: 50px;
+          margin-bottom: 20px; }
+        #con2 .inner .community > ul li a p:nth-of-type(1) {
+          font: 200 12px/1 "Inter"; }
+        #con2 .inner .community > ul li a p:nth-of-type(2) {
+          font: 100 10px/2 "Inter"; }
 
-  #footer {
+  #footer .inner {
     width: 100%;
-    height: 200px;
-    text-align: center; }
-    #footer .inner {
+    padding: 20px 40px;
+    box-sizing: border-box; }
+    #footer .inner .bottom p {
       width: 100%;
-      padding: 0px 40px;
-      box-sizing: border-box; }
-      #footer .inner::after {
-        content: "";
-        display: block;
-        clear: both; }
-      #footer .inner .top {
-        width: 100%;
-        height: 100px;
+      font: 200 10px/1 'Inter', sans-serif;
+      color: #f2f2f2;
+      float: none;
+      padding-top: 0px; }
+    #footer .inner .bottom ul.list {
+      display: none;
+      width: 350px;
+      float: left; }
+      #footer .inner .bottom ul.list > li {
+        float: left;
+        padding: 0px 20px;
+        box-sizing: border-box;
         position: relative; }
-        #footer .inner .top h1 {
-          position: absolute;
-          left: 0px;
-          top: 50%;
-          transform: translateY(-50%);
-          font: 800 30px/1 "inter";
-          color: #f2f2f2;
-          letter-spacing: -6px; }
-          #footer .inner .top h1 span {
-            color: #f6492b; }
-        #footer .inner .top a {
-          position: absolute;
-          right: 0px;
-          top: 50%;
-          transform: translateY(-50%);
+        #footer .inner .bottom ul.list > li::after {
+          content: "";
           display: block;
-          font: 200 14px/60px 'Noto Sans KR', sans-serif;
-          color: #f2f2f2;
-          text-align: left;
-          width: 200px;
-          height: 70px;
-          border-bottom: 1px solid #eee; }
-          #footer .inner .top a::before {
-            content: "";
-            display: block;
-            width: 30px;
-            height: 1px;
-            background: #f2f2f2;
-            position: absolute;
-            right: 0px;
-            top: 50%;
-            transform: translateY(-50%);
-            transition: 0.5s;
-            transform-origin: center; }
-          #footer .inner .top a::after {
-            content: "";
-            display: block;
-            width: 1px;
-            height: 30px;
-            background: #f2f2f2;
-            position: absolute;
-            right: 14px;
-            top: 50%;
-            transform: translateY(-50%);
-            transition: 0.5s;
-            transform-origin: center; }
-          #footer .inner .top a.on::before {
-            transform: translateY(-50%) rotate(45deg); }
-          #footer .inner .top a.on::after {
-            transform: translateY(-50%) rotate(45deg); }
-      #footer .inner .bottom {
-        width: 100%;
-        height: 100px;
-        position: relative;
-        padding: 30px 0px;
-        box-sizing: border-box; }
-        #footer .inner .bottom p {
-          font: 200 14px/1 'Inter', sans-serif;
-          color: #f2f2f2;
-          float: left;
-          padding-top: 4px; }
-        #footer .inner .bottom ul.list {
-          width: 350px;
-          float: left; }
-          #footer .inner .bottom ul.list > li {
-            float: left;
-            padding: 0px 20px;
-            box-sizing: border-box;
-            position: relative; }
-            #footer .inner .bottom ul.list > li::after {
-              content: "";
-              display: block;
-              width: 1px;
-              height: 5px;
-              position: absolute;
-              right: 5px;
-              top: 30%;
-              background-color: #eee; }
-            #footer .inner .bottom ul.list > li:last-child::after {
-              display: none; }
-            #footer .inner .bottom ul.list > li a {
-              display: block;
-              padding: 5px;
-              box-sizing: border-box;
-              font: 200 12px/1 'Noto Sans KR', sans-serif;
-              color: #f2f2f2; }
-        #footer .inner .bottom ul.icon {
-          float: right; }
-          #footer .inner .bottom ul.icon li {
-            float: right;
-            padding: 0px 10px;
-            box-sizing: border-box; }
-            #footer .inner .bottom ul.icon li a {
-              display: block; }
-              #footer .inner .bottom ul.icon li a i {
-                color: #f2f2f2;
-                font-size: 30px;
-                transition: 0.5s; }
-            #footer .inner .bottom ul.icon li:hover:nth-of-type(1) a i {
-              color: #3f4c99; }
-            #footer .inner .bottom ul.icon li:hover:nth-of-type(2) a i {
-              color: #79b7ff; }
-            #footer .inner .bottom ul.icon li:hover:nth-of-type(3) a i {
-              color: #7dcf68; } }
+          width: 1px;
+          height: 5px;
+          position: absolute;
+          right: 5px;
+          top: 30%;
+          background-color: #eee; }
+        #footer .inner .bottom ul.list > li:last-child::after {
+          display: none; }
+        #footer .inner .bottom ul.list > li a {
+          display: block;
+          padding: 5px;
+          box-sizing: border-box;
+          font: 200 12px/1 'Noto Sans KR', sans-serif;
+          color: #f2f2f2; }
+    #footer .inner .bottom ul.icon {
+      width: 150px;
+      margin: 0px auto 30px;
+      float: none; }
+      #footer .inner .bottom ul.icon li {
+        width: 50px;
+        float: left; } }
 
 /*# sourceMappingURL=style.css.map */
