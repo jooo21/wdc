@@ -6,8 +6,7 @@ $(document).ready(function(){
     var headpos = $header.height();
     var speed = 300;  
 
-    $(window).resize(function() { if($(window).width() >768) { /* do something */ } });
-
+    
     $header.css({transform:"translateY(0px)"});
     $gnbBtn.hide();
     $(window).on("scroll",function(){
@@ -64,6 +63,10 @@ $(document).ready(function(){
         }
 
     })
+
+    
+
+
     //제일 큰 서브 높이값 반환 함수
     function getMax(){
         var ht_max=0;
@@ -77,19 +80,22 @@ $(document).ready(function(){
 
     //2depth 여는 함수 정의
     function openSub(){
-        var ht = $header.outerHeight();
+        var ht = getMax();
         var bg = $gnb_ul.find("li").css("background-color");
-
-        $header.prepend(
-            $("<div class='bgGnb'>")
-                .css({
-                    width:"100%", height:getMax(), position:"absolute",
-                    top:0, left:0, backgroundColor:bg, display:"none",paddingTop:"100px",
-                    borderRadius:"0px 0px 50px 0px"
-                })
-        )
-        $gnb_ul.stop().slideDown(speed);
-        $(".bgGnb").stop().slideDown(speed);
+        if($(window).width() < 1179) { 
+            $gnb_ul.hide();
+        }else{
+            $header.prepend(
+                $("<div class='bgGnb'>")
+                    .css({
+                        width:"100%", height:ht, position:"absolute",
+                        top:0, left:0, backgroundColor:bg, display:"none",paddingTop:"100px",
+                        borderRadius:"0px 0px 50px 0px"
+                    })
+            )
+            $gnb_ul.stop().slideDown(speed);
+            $(".bgGnb").stop().slideDown(speed);
+        } 
     }
 
     //2depth 닫는 함수 정의
@@ -99,4 +105,5 @@ $(document).ready(function(){
             $(this).remove();
         });
     }
+    
 });
