@@ -758,7 +758,9 @@ section.con {
         transition: 0.5s; }
         #con2 .inner .notice > ul > li a p {
           font: 300 18px/1 "Inter";
-          transition: 0.5s; }
+          transition: 0.5s;
+          padding-left: 10px;
+          border-left: 2px solid #eeeeee1e; }
         #con2 .inner .notice > ul > li a span {
           font: 200 12px/1 "Inter"; }
         #con2 .inner .notice > ul > li a svg {
@@ -772,7 +774,8 @@ section.con {
             stroke: #eeeeee30;
             transition: 0.3s; }
         #con2 .inner .notice > ul > li a:hover p {
-          color: #fff; }
+          color: #fff;
+          border-left: 2px solid #777; }
         #con2 .inner .notice > ul > li a:hover svg path {
           stroke: #f2f2f2;
           stroke-dashoffset: 0;
@@ -1271,6 +1274,7 @@ section.con {
     #header .inner .util {
       width: 60%; }
   #header.on {
+    width: 95%;
     height: 120px; }
     #header.on .inner > h1 {
       top: 10px;
@@ -1278,11 +1282,14 @@ section.con {
     #header.on .inner #gnb {
       padding: 0px 10px;
       box-sizing: border-box; }
+      #header.on .inner #gnb a {
+        font: 300 11px/100px "Inter"; }
       #header.on .inner #gnb > li {
-        padding-top: 80px; }
+        padding-top: 35px; }
         #header.on .inner #gnb > li > ul {
           display: none; }
     #header.on .inner .util {
+      width: 70%;
       top: 20px; }
 
   section.con .inner {

@@ -783,6 +783,7 @@ section.con {
                 width:100%;
                 >li {
                     width:100%;padding:20px 70px 30px 10px;box-sizing:border-box;
+                    
                     a{
                         width:100%;
                         display: block;
@@ -792,6 +793,8 @@ section.con {
                         p{
                             font:300 18px/1 "Inter";
                             transition: 0.5s;
+                            padding-left:10px;
+                            border-left:2px solid #eeeeee1e;
                         }
                         span{
                             font:200 12px/1 "Inter";
@@ -810,7 +813,7 @@ section.con {
                         &:hover {
                             p{
                                 color:#fff;
-
+                                border-left:2px solid #777;
                             }
                             svg path{
                                 stroke:#f2f2f2;
@@ -1439,6 +1442,7 @@ section.con {
             }
         }
         &.on{
+            width:95%;
             height:120px;
             .inner {
                 >h1 {
@@ -1448,14 +1452,18 @@ section.con {
                 #gnb{
                     padding:0px 10px;
                     box-sizing:border-box;
+                    a{
+                        font:300 11px/100px "Inter"; 
+                    }
                     >li {
-                        padding-top:80px;
+                        padding-top:35px;
                         >ul{
                             display:none;
                         }
                     }
                 }
                 .util{
+                    width: 70%;
                     top:20px;
                 }
             }
@@ -1586,6 +1594,7 @@ section.con {
                     margin-bottom:50px;
                     li {
                         padding:5px 0px;
+
                         a{
                             p{
                                 font:300 14px/1 "Inter";
