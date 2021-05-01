@@ -111,9 +111,8 @@ body {
     transition: 0.5s; }
     #header .inner h1 {
       position: absolute;
-      top: 50%;
-      left: 0%;
-      transform: translateY(-50%); }
+      top: 20%;
+      left: 0%; }
       #header .inner h1 a {
         font: 800 50px/1 "inter";
         color: #f2f2f2;
@@ -122,10 +121,8 @@ body {
           color: #f6492b; }
     #header .inner #gnb {
       width: 65%;
-      position: absolute;
-      left: 10%;
-      top: 50%;
-      transform: translateY(-50%); }
+      margin-left: 10%;
+      margin-top: 20px; }
       #header .inner #gnb::after {
         content: "";
         display: block;
@@ -157,7 +154,7 @@ body {
             overflow: visible;
             transition: 0.5s;
             margin-left: 10%;
-            margin-bottom: 15%;
+            margin-bottom: 30px;
             transform: rotateY(0deg);
             position: relative;
             filter: drop-shadow(0 0 0.3rem #f2f2f2); }
@@ -170,13 +167,13 @@ body {
             height: 50px;
             background: #000f3f;
             position: relative;
-            transition: 0.5s; }
+            transition: 0.5s;
+            text-align: center; }
             #header .inner #gnb > li > ul li a {
               display: block;
-              text-indent: 20px;
               width: 100%;
               height: 100%;
-              font: 200 12px/50px "Inter";
+              font: 200 12px/1 "Inter";
               color: #f2f2f2;
               transition: 0.5s; }
             #header .inner #gnb > li > ul li::after {
@@ -225,9 +222,8 @@ body {
     #header .inner .util {
       position: absolute;
       width: 25%;
-      top: 50%;
+      top: 30%;
       right: 0%;
-      transform: translateY(-50%);
       transition: 0.5s; }
       #header .inner .util li {
         width: 33.3333333333%;
@@ -295,8 +291,8 @@ body {
       margin: 0px auto;
       position: relative; }
       #header.on .inner .util {
-        width: 20%;
-        top: 50%; }
+        width: 25%;
+        top: 30%; }
 
 .gnbBtn {
   display: block;
@@ -876,7 +872,7 @@ section.con {
       width: 100%;
       height: 100px;
       position: relative; }
-      #footer .inner .top h1 {
+      #footer .inner .top > h1 {
         position: absolute;
         left: 0px;
         top: 50%;
@@ -884,7 +880,7 @@ section.con {
         font: 800 30px/1 "inter";
         color: #f2f2f2;
         letter-spacing: -6px; }
-        #footer .inner .top h1 span {
+        #footer .inner .top > h1 span {
           color: #f6492b; }
       #footer .inner .top a {
         position: absolute;
@@ -1012,16 +1008,14 @@ section.con {
         font: 800 40px/1 "inter"; }
     #header .inner #gnb {
       width: 100%;
-      left: 0%;
-      top: 65%;
-      padding: 0px 20px;
-      box-sizing: border-box; }
-      #header .inner #gnb > li > a {
-        font: 300 12px/100px "Inter"; }
-      #header .inner #gnb > li > ul li {
-        text-align: center; }
-        #header .inner #gnb > li > ul li a {
-          text-indent: 0px; }
+      margin-top: 0px;
+      margin-left: 0px; }
+      #header .inner #gnb > li {
+        padding-top: 50px;
+        box-sizing: border-box; }
+        #header .inner #gnb > li > a {
+          height: 70px;
+          font: 300 12px/70px "Inter"; }
     #header .inner .util {
       width: 50%;
       right: 3%;
@@ -1043,7 +1037,8 @@ section.con {
           width: 30%;
           text-align: center; }
   #header.on {
-    width: 93%; }
+    width: 93%;
+    height: 140px; }
     #header.on .inner {
       width: 100%;
       height: 20vh; }
@@ -1051,25 +1046,19 @@ section.con {
         top: 20px;
         left: 10%; }
       #header.on .inner #gnb {
-        width: 100%;
-        left: 0%;
-        padding: 0px 20px;
-        box-sizing: border-box;
-        top: 60%;
-        transform: translateY(0%); }
+        width: 100%; }
         #header.on .inner #gnb > li {
           width: 22%;
           margin-right: 4%; }
           #header.on .inner #gnb > li a {
             width: 100%;
-            font: 300 12px/1 "Inter"; }
+            font: 300 12px/100px "Inter"; }
           #header.on .inner #gnb > li:last-child {
             margin-right: 0%; }
           #header.on .inner #gnb > li > ul {
-            top: 50px; }
+            top: 150px; }
             #header.on .inner #gnb > li > ul li a {
-              text-align: center;
-              text-indent: 0px; }
+              font: 200 12px/1 "Inter"; }
       #header.on .inner .util {
         width: 50%;
         top: 30px; }
@@ -1272,5 +1261,140 @@ section.con {
       #footer .inner .bottom ul.icon li {
         width: 50px;
         float: left; } }
+@media screen and (max-width: 539px) {
+  #header .inner {
+    height: 100px; }
+    #header .inner #gnb > li {
+      padding-top: 35px; }
+      #header .inner #gnb > li > a {
+        font: 300 11px/70px "Inter"; }
+    #header .inner .util {
+      width: 60%; }
+  #header.on {
+    height: 120px; }
+    #header.on .inner > h1 {
+      top: 10px;
+      left: 5%; }
+    #header.on .inner #gnb {
+      padding: 0px 10px;
+      box-sizing: border-box; }
+      #header.on .inner #gnb > li {
+        padding-top: 80px; }
+        #header.on .inner #gnb > li > ul {
+          display: none; }
+    #header.on .inner .util {
+      top: 20px; }
+
+  section.con .inner {
+    padding: 80px 30px; }
+
+  #visual .inner #tab .boxs > p {
+    font-size: 40px; }
+  #visual .inner #tab .boxs #number span {
+    font: 400 35px/1.5 'Space Grotesk', sans-serif; }
+  #visual .inner #tab .boxs #number p {
+    font: 300 15px/1 'Space Grotesk', sans-serif; }
+  #visual .inner #tab .btns {
+    height: 110px; }
+    #visual .inner #tab .btns ul li a em {
+      margin-bottom: 0px; }
+    #visual .inner #tab .btns ul li a p {
+      display: none; }
+
+  #con1 .inner {
+    padding-top: 100px; }
+    #con1 .inner .back {
+      width: 100%;
+      height: 150px;
+      margin-bottom: 70px;
+      text-align: center; }
+      #con1 .inner .back p:nth-of-type(1) {
+        font: 200 12px/1 "Inter"; }
+      #con1 .inner .back p:nth-of-type(2) {
+        font: 200 26px/1 "Inter"; }
+      #con1 .inner .back a {
+        left: 50%;
+        bottom: -10%;
+        transform: translate(-50%);
+        font: 100 12px/40px "Inter"; }
+    #con1 .inner ul.panel {
+      width: 100%;
+      right: 0%;
+      margin-bottom: 50px; }
+    #con1 .inner ul.circle_h li {
+      width: 22%; }
+    #con1 .inner ul.circle {
+      height: 200px; }
+      #con1 .inner ul.circle li a.btn {
+        width: 150px;
+        height: 150px;
+        right: -55px;
+        bottom: 47%; }
+      #con1 .inner ul.circle li:nth-of-type(1) .bg {
+        clip-path: circle(3% at 80% 20%); }
+      #con1 .inner ul.circle li:nth-of-type(2) .bg {
+        clip-path: circle(3% at 80% 20%); }
+      #con1 .inner ul.circle li:nth-of-type(3) .bg {
+        clip-path: circle(3% at 80% 20%); }
+      #con1 .inner ul.circle li.on:nth-of-type(1) .bg {
+        clip-path: circle(130% at 80% 20%); }
+      #con1 .inner ul.circle li.on:nth-of-type(2) .bg {
+        clip-path: circle(130% at 80% 20%); }
+      #con1 .inner ul.circle li.on:nth-of-type(3) .bg {
+        clip-path: circle(130% at 80% 20%); }
+
+  #con2 .inner {
+    padding: 80px 30px; }
+    #con2 .inner .notice {
+      width: 100%; }
+      #con2 .inner .notice > p {
+        margin-bottom: 50px;
+        padding-left: 15px; }
+        #con2 .inner .notice > p::before {
+          width: 10px; }
+      #con2 .inner .notice > ul {
+        margin-bottom: 50px; }
+        #con2 .inner .notice > ul li {
+          padding: 5px 0px; }
+          #con2 .inner .notice > ul li a p {
+            font: 300 14px/1 "Inter"; }
+          #con2 .inner .notice > ul li a span {
+            font: 200 12px/1 "Inter"; }
+    #con2 .inner .community {
+      width: 100%; }
+      #con2 .inner .community > p {
+        margin-bottom: 50px;
+        padding-left: 15px; }
+        #con2 .inner .community > p::before {
+          width: 10px;
+          height: 1px; }
+      #con2 .inner .community > ul li {
+        height: 130px;
+        padding: 0px 5px; }
+        #con2 .inner .community > ul li a svg {
+          display: none; }
+        #con2 .inner .community > ul li a:hover {
+          background: #eeeeee1e;
+          border: 1px solid #eee; }
+        #con2 .inner .community > ul li a i {
+          font-size: 40px;
+          margin-bottom: 10px;
+          padding: 20px 10px; }
+        #con2 .inner .community > ul li a p:nth-of-type(1) {
+          font: 200 10px/1 "Inter";
+          margin-bottom: 0px; }
+        #con2 .inner .community > ul li a p:nth-of-type(2) {
+          display: none; }
+
+  #footer .inner {
+    padding: 20px 30px; }
+    #footer .inner .top {
+      height: 60px; }
+      #footer .inner .top h1 {
+        left: 50%;
+        transform: translate(-50%, -50%);
+        letter-spacing: 0px; }
+      #footer .inner .top a {
+        display: none; } }
 
 /*# sourceMappingURL=style.css.map */
