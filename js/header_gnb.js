@@ -82,7 +82,7 @@ $(document).ready(function(){
     function openSub(){
         var ht = getMax();
         var bg = $gnb_ul.find("li").css("background-color");
-        if($(window).width() < 1179) { 
+        if($(window).width() < 820) { 
             $gnb_ul.hide();
         }else{
             $header.prepend(
