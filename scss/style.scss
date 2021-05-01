@@ -1053,11 +1053,11 @@ section.con {
             }
      
              >h1 {
-                 left:10%;
+                 left:5%;
                  top:5%;
                  transform:translateY(0%);
                  a{
-                     font:800 50px/1 "inter";
+                     font:800 40px/1 "inter";
                      color:#f2f2f2;
                      letter-spacing: -6px;
                      span {
@@ -1071,7 +1071,7 @@ section.con {
                 position:absolute;
                 left:0%;
                 top:60%;
-                padding:0px 50px;
+                padding:0px 20px;
                 box-sizing: border-box;
                 &::after {
                     content:"";display:block;clear:both;
@@ -1084,7 +1084,7 @@ section.con {
                         display:block;
                         width:100%;
                         height:100px;
-                        font:300 14px/100px "Inter"; 
+                        font:300 12px/100px "Inter"; 
                         color:#ccc;
                         text-align:center;
     
@@ -1196,7 +1196,7 @@ section.con {
             
              .util {
                  width:50%;
-                 right:6%;
+                 right:3%;
                  top:10%;
                  transform: translateY(0%) scale(0.8);
                  transition:0.5s;
@@ -1280,12 +1280,12 @@ section.con {
              
         }
         &.on{
-            width:90%;left:0px;position:fixed;top:0px;transform:translateY(0px);
+            width:95%;left:0px;position:fixed;top:0px;transform:translateY(0px);
              background:#000f3f;
              border-radius: 0px 0px 40px 0px ;
              border:none;
              .inner {
-                 width:100%;height:30vh;
+                 width:100%;height:20vh;
                 >h1 {
                     top:20px;
                     left:10%;
@@ -1293,7 +1293,7 @@ section.con {
                 #gnb{
                     width:100%;
                     left:0%;
-                    padding:0px 50px;
+                    padding:0px 20px;
                     box-sizing: border-box;
                     top:60%;
                     transform:translateY(0%);
