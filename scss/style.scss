@@ -313,7 +313,7 @@ body {
  .gnbBtn {
      display:block;
      width:50px; height:50px;background:#f2f2f2;
-     position: fixed;right:6%; top:121px;
+     position: fixed;right:3%; top:20vh;
      z-index:4;
      >span{
          display: block;
@@ -341,16 +341,17 @@ body {
      }
      }
      &.on{
-         h1{
-             display:none;
-         }
+         background:#000f3f;
          span{
              transform: rotate(45deg);
-             &::before{
-                 transform:translate(-50%,-50%) rotate(90deg);
+             background:#f2f2f2;
+            &::before{
+            transform:translate(-50%,-50%) rotate(90deg);
+            background:#f2f2f2;
              }
              &::after{
                  transform:translate(50%,50%) rotate(90deg);
+                 background:#f2f2f2;
              }
          }
      }
@@ -1070,7 +1071,7 @@ section.con {
                 width:100%;
                 position:absolute;
                 left:0%;
-                top:60%;
+                top:65%;
                 padding:0px 20px;
                 box-sizing: border-box;
                 &::after {
@@ -1280,7 +1281,7 @@ section.con {
              
         }
         &.on{
-            width:95%;left:0px;position:fixed;top:0px;transform:translateY(0px);
+            width:93%;left:0px;position:fixed;top:0px;transform:translateY(0px);
              background:#000f3f;
              border-radius: 0px 0px 40px 0px ;
              border:none;
@@ -1318,8 +1319,11 @@ section.con {
                  }
              }
          }
-     }
-    
+    }
+    .gnbBtn {
+        left:93%;
+        // top:10px;
+    }
     section.con {
         .inner{
             width:100%;

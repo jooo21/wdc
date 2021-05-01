@@ -304,8 +304,8 @@ body {
   height: 50px;
   background: #f2f2f2;
   position: fixed;
-  right: 6%;
-  top: 121px;
+  right: 3%;
+  top: 20vh;
   z-index: 4; }
   .gnbBtn > span {
     display: block;
@@ -340,14 +340,17 @@ body {
       height: 4px;
       background: #333;
       transition: 0.4s; }
-  .gnbBtn.on h1 {
-    display: none; }
-  .gnbBtn.on span {
-    transform: rotate(45deg); }
-    .gnbBtn.on span::before {
-      transform: translate(-50%, -50%) rotate(90deg); }
-    .gnbBtn.on span::after {
-      transform: translate(50%, 50%) rotate(90deg); }
+  .gnbBtn.on {
+    background: #000f3f; }
+    .gnbBtn.on span {
+      transform: rotate(45deg);
+      background: #f2f2f2; }
+      .gnbBtn.on span::before {
+        transform: translate(-50%, -50%) rotate(90deg);
+        background: #f2f2f2; }
+      .gnbBtn.on span::after {
+        transform: translate(50%, 50%) rotate(90deg);
+        background: #f2f2f2; }
 
 section.con {
   width: 100%;
@@ -1015,7 +1018,7 @@ section.con {
         width: 100%;
         position: absolute;
         left: 0%;
-        top: 60%;
+        top: 65%;
         padding: 0px 20px;
         box-sizing: border-box; }
         #header .inner #gnb::after {
@@ -1180,7 +1183,7 @@ section.con {
               color: #f6492b;
               font-weight: 500; }
     #header.on {
-      width: 95%;
+      width: 93%;
       left: 0px;
       position: fixed;
       top: 0px;
@@ -1214,6 +1217,9 @@ section.con {
         #header.on .inner .util {
           width: 50%;
           top: 30px; }
+
+  .gnbBtn {
+    left: 93%; }
 
   section.con .inner {
     width: 100%;
