@@ -1114,250 +1114,76 @@ section.con {
 
   #con1 .inner {
     padding-top: 100px; }
-    #con1 .inner::after {
-      content: "";
-      display: block;
-      clear: both; }
     #con1 .inner .back {
-      width: 40%;
-      height: 250px;
-      position: relative;
-      float: left; }
+      width: 40%; }
       #con1 .inner .back p:nth-of-type(1) {
-        font: 200 14px/1 "Inter";
-        color: #ddd;
-        margin-bottom: 20px; }
-        #con1 .inner .back p:nth-of-type(1) span {
-          font: 200 12px/1 "Inter"; }
+        font: 200 14px/1 "Inter"; }
       #con1 .inner .back p:nth-of-type(2) {
-        font: 200 30px/1 "Inter";
-        color: #eee; }
-      #con1 .inner .back a {
-        position: absolute;
-        left: 0%;
-        bottom: 0%;
-        display: block;
-        width: 160px;
-        height: 40px;
-        font: 100 12px/40px "Inter";
-        text-align: center;
-        letter-spacing: 2px;
-        color: #ddd;
-        transition: 0.5s;
-        background: #eeeeee10; }
-        #con1 .inner .back a:hover {
-          background: #eeeeee30;
-          font: 300 12px/40px "Inter";
-          color: #f86045; }
+        font: 200 30px/1 "Inter"; }
     #con1 .inner ul.panel {
-      width: 60%;
-      height: 250px;
-      position: relative;
-      right: 0%;
-      float: right; }
+      width: 60%; }
       #con1 .inner ul.panel li {
         width: 200px;
         height: 200px;
-        position: absolute;
-        top: 0px;
-        left: 50%;
-        margin-left: -100px;
-        transition: all 1s; }
-        #con1 .inner ul.panel li div {
-          width: 100%;
-          height: 100%;
-          position: absolute;
-          top: 0px;
-          left: 0px;
-          background: linear-gradient(-45deg, aqua, lightgreen);
-          display: flex;
-          justify-content: center;
-          align-items: center; }
-        #con1 .inner ul.panel li:nth-of-type(1) {
-          transform: translate(-160px, 100px) scale(0) rotate(-90deg);
-          opacity: 0.1; }
-        #con1 .inner ul.panel li:nth-of-type(2) {
-          transform: translate(0px, 0px) scale(1) rotate(0deg);
-          opacity: 1; }
-        #con1 .inner ul.panel li:nth-of-type(3) {
-          transform: translate(160px, 100px) scale(0) rotate(90deg);
-          opacity: 0.1; }
+        margin-left: -100px; }
       #con1 .inner ul.panel .prev {
-        position: absolute;
-        left: 0px;
-        top: 50%;
-        width: 0px;
-        height: 0px;
-        border-top: 6px solid transparent;
-        border-bottom: 6px solid transparent;
-        border-right: 9px solid #f2f2f2;
-        border-left: 6px solid  none;
-        transition: 0.5s; }
-        #con1 .inner ul.panel .prev:hover {
-          border-right: 9px solid #f6492b; }
+        left: 0px; }
       #con1 .inner ul.panel .next {
-        position: absolute;
-        right: 0px;
-        top: 50%;
-        width: 0px;
-        height: 0px;
-        border-top: 6px solid transparent;
-        border-bottom: 6px solid transparent;
-        border-right: 6px solid none;
-        border-left: 9px solid  #f2f2f2;
-        transition: 0.5s; }
-        #con1 .inner ul.panel .next:hover {
-          border-left: 9px solid #f6492b; }
-    #con1 .inner ul.circle_h {
-      width: 100%;
-      margin-bottom: 50px; }
-      #con1 .inner ul.circle_h::after {
-        content: "";
-        display: block;
-        clear: both; }
-      #con1 .inner ul.circle_h li {
-        width: 15%;
-        height: 50px;
-        float: left; }
-        #con1 .inner ul.circle_h li em {
-          display: block;
-          font: 300 10px/1 "Inter";
-          color: #f2f2f2;
-          margin-bottom: 10px; }
-        #con1 .inner ul.circle_h li span {
-          display: block;
-          font: 100 10px/1 "Inter";
-          color: #f2f2f2; }
-        #con1 .inner ul.circle_h li:last-child {
-          float: right; }
+        right: 0px; }
+    #con1 .inner ul.circle_h li em {
+      font: 300 10px/1 "Inter";
+      color: #f2f2f2; }
+    #con1 .inner ul.circle_h li span {
+      font: 100 10px/1 "Inter";
+      color: #f2f2f2; }
     #con1 .inner ul.circle {
-      width: 100%;
-      height: 250px;
-      position: relative; }
-      #con1 .inner ul.circle::after {
-        content: "";
-        display: block;
-        clear: both; }
-      #con1 .inner ul.circle li {
-        float: left;
-        width: 33.3333333333%;
-        height: 100%;
-        padding: 50px 30px;
-        box-sizing: border-box;
-        overflow: hidden;
-        background: #eeeeee10;
-        position: relative; }
-        #con1 .inner ul.circle li .bg {
-          width: 100%;
-          height: 100%;
-          position: absolute;
-          top: 0px;
-          left: 0px;
-          transition-duration: 1s; }
-        #con1 .inner ul.circle li p {
-          font: 300 12px/1 "Inter";
-          color: #f2f2f2;
-          margin-bottom: 160px;
-          position: absolute;
-          left: 10%;
-          top: 10%; }
-        #con1 .inner ul.circle li span {
-          font: 100 10px/1.5 "Inter";
-          color: #ddd;
-          position: absolute;
-          left: 10%;
-          bottom: 10%; }
-        #con1 .inner ul.circle li a.btn {
-          display: block;
-          position: absolute;
-          z-index: 1;
-          width: 200px;
-          height: 200px;
-          border-radius: 50%;
-          cursor: pointer;
-          transform: scale(1);
-          transition: 0.5s;
-          right: -50px;
-          bottom: 47%;
-          overflow: hidden; }
-          #con1 .inner ul.circle li a.btn::before {
-            content: "";
-            display: block;
-            width: 10px;
-            height: 1px;
-            transform: rotate(90deg) translate(-50%, -50%);
-            background: #222;
-            position: absolute;
-            left: 50%;
-            bottom: 50%;
-            transition: 0.5s;
-            transform-origin: left; }
-          #con1 .inner ul.circle li a.btn::after {
-            content: "";
-            display: block;
-            width: 10px;
-            height: 1px;
-            transform: rotate(0deg) translate(-50%, -50%);
-            background: #222;
-            position: absolute;
-            left: 50%;
-            bottom: 50%;
-            transition: 0.5s;
-            transform-origin: center; }
-          #con1 .inner ul.circle li a.btn:hover {
-            transition: 0.2s;
-            border-radius: 50%;
-            transform: scale(1.2); }
-            #con1 .inner ul.circle li a.btn:hover::before, #con1 .inner ul.circle li a.btn:hover::after {
-              background: #f2f2f2; }
-          #con1 .inner ul.circle li a.btn.on:nth-of-type(1) {
-            background: #99a2d41e;
-            clip-path: circle(100% at 50% 50%);
-            transition: 1s; }
-            #con1 .inner ul.circle li a.btn.on:nth-of-type(1)::before {
-              background: #f2f2f2;
-              transform: rotate(-180deg) translate(-50%, -50%);
-              transition: 0.5s; }
-            #con1 .inner ul.circle li a.btn.on:nth-of-type(1)::after {
-              background: #f2f2f2;
-              transform: rotate(180deg) translate(50%, -50%);
-              transition: 0.5s; }
-          #con1 .inner ul.circle li a.btn.on:nth-of-type(2) {
-            background: #8ccc9f15;
-            clip-path: circle(100% at 50% 50%); }
-          #con1 .inner ul.circle li a.btn.on:nth-of-type(3) {
-            background: #d1928711;
-            clip-path: circle(100% at 50% 50%); }
-        #con1 .inner ul.circle li:nth-of-type(1) .bg {
-          background: #eeeeee00;
-          clip-path: circle(3% at 80% 10%);
-          transition: 0.4s; }
-        #con1 .inner ul.circle li:nth-of-type(1) .btn {
-          background: #2337a8;
-          clip-path: circle(5% at 50% 50%); }
-        #con1 .inner ul.circle li:nth-of-type(2) .bg {
-          background: #eeeeee00;
-          clip-path: circle(3% at 80% 10%);
-          transition: 0.4s; }
-        #con1 .inner ul.circle li:nth-of-type(2) .btn {
-          background: #1f9b44;
-          clip-path: circle(5% at 50% 50%); }
-        #con1 .inner ul.circle li:nth-of-type(3) .bg {
-          background: #eeeeee00;
-          clip-path: circle(3% at 80% 10%);
-          transition: 0.4s; }
-        #con1 .inner ul.circle li:nth-of-type(3) .btn {
-          background: #942c1a;
-          clip-path: circle(5% at 50% 50%); }
-        #con1 .inner ul.circle li.on:nth-of-type(1) .bg {
-          background: #3250f6;
-          clip-path: circle(130% at 80% 10%); }
-        #con1 .inner ul.circle li.on:nth-of-type(2) .bg {
-          background: #31df65;
-          clip-path: circle(130% at 80% 10%); }
-        #con1 .inner ul.circle li.on:nth-of-type(3) .bg {
-          background: #dd462b;
-          clip-path: circle(130% at 80% 10%); }
+      height: 250px; }
+      #con1 .inner ul.circle li p {
+        font: 300 12px/1 "Inter";
+        color: #f2f2f2;
+        margin-bottom: 160px;
+        position: absolute;
+        left: 10%;
+        top: 10%; }
+      #con1 .inner ul.circle li span {
+        font: 100 10px/1.5 "Inter";
+        color: #ddd;
+        position: absolute;
+        left: 10%;
+        bottom: 10%; }
+      #con1 .inner ul.circle li a.btn {
+        width: 200px;
+        height: 200px;
+        right: -50px;
+        bottom: 47%; }
+        #con1 .inner ul.circle li a.btn.on:nth-of-type(1) {
+          clip-path: circle(100% at 50% 50%); }
+          #con1 .inner ul.circle li a.btn.on:nth-of-type(1)::before {
+            transform: rotate(-180deg) translate(-50%, -50%); }
+          #con1 .inner ul.circle li a.btn.on:nth-of-type(1)::after {
+            transform: rotate(180deg) translate(50%, -50%); }
+        #con1 .inner ul.circle li a.btn.on:nth-of-type(2) {
+          clip-path: circle(100% at 50% 50%); }
+        #con1 .inner ul.circle li a.btn.on:nth-of-type(3) {
+          clip-path: circle(100% at 50% 50%); }
+      #con1 .inner ul.circle li:nth-of-type(1) .bg {
+        clip-path: circle(3% at 80% 10%); }
+      #con1 .inner ul.circle li:nth-of-type(1) .btn {
+        clip-path: circle(5% at 50% 50%); }
+      #con1 .inner ul.circle li:nth-of-type(2) .bg {
+        clip-path: circle(3% at 80% 10%); }
+      #con1 .inner ul.circle li:nth-of-type(2) .btn {
+        clip-path: circle(5% at 50% 50%); }
+      #con1 .inner ul.circle li:nth-of-type(3) .bg {
+        clip-path: circle(3% at 80% 10%); }
+      #con1 .inner ul.circle li:nth-of-type(3) .btn {
+        clip-path: circle(5% at 50% 50%); }
+      #con1 .inner ul.circle li.on:nth-of-type(1) .bg {
+        clip-path: circle(130% at 80% 10%); }
+      #con1 .inner ul.circle li.on:nth-of-type(2) .bg {
+        clip-path: circle(130% at 80% 10%); }
+      #con1 .inner ul.circle li.on:nth-of-type(3) .bg {
+        clip-path: circle(130% at 80% 10%); }
 
   #con2 .inner::after {
     content: "";
