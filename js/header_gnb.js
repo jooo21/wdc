@@ -25,7 +25,11 @@ $(document).ready(function(){
             
         }else{
             if(scroll >=headpos){
-                $header.css({transform:"translateY(-121px)"});
+                if($(window).width() < 1179){
+                    $header.css({transform:"translateY(-141px)"})
+                }else{
+                    $header.css({transform:"translateY(-121px)"})
+                }
                 $gnbBtn.show();
 
             }else{
@@ -58,14 +62,16 @@ $(document).ready(function(){
             $header.css({transform:"translateY(0px)",top:0})
             $header.addClass("on");
         }else{
-            $header.css({transform:"translateY(-121px)"})
+            if($(window).width() < 1179){
+                $header.css({transform:"translateY(-141px)"})
+            }else{
+                $header.css({transform:"translateY(-121px)"})
+            }
+            
             $header.removeClass("on");
         }
 
     })
-
-    
-
 
     //제일 큰 서브 높이값 반환 함수
     function getMax(){
