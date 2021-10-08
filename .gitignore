@@ -2,3 +2,7 @@
 .sass-cache
 /새 폴더
 .새 폴더
+/node_modules
+gulpfile.js
+package.json
+package-lock.json

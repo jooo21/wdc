@@ -227,7 +227,7 @@ body {
       right: 0%;
       transition: 0.5s; }
       #header .inner .util li {
-        width: 33.3333333333%;
+        width: 33.33333%;
         height: 30px;
         float: left;
         text-align: center;
@@ -261,6 +261,7 @@ body {
             background: #f2f2f2;
             color: #f6492b;
             border: 1px solid #f2f2f2; }
+
 @keyframes updown {
   0% {
     transform: translateY(0%); }
@@ -395,10 +396,12 @@ section.con {
           filter: brightness(50%);
           position: absolute;
           left: 0px;
-          top: 0px; }
+          top: 0px;
+          margin: 0 auto; }
           #visual .inner #tab .boxs > div video {
-            width: auto;
-            height: 100vh;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
             position: absolute;
             left: 50%;
             transform: translateX(-50%); }
@@ -478,6 +481,7 @@ section.con {
   content: "";
   display: block;
   clear: both; }
+
 #con1 .inner .back {
   width: 50%;
   height: 250px;
@@ -510,6 +514,7 @@ section.con {
       background: #eeeeee30;
       font: 300 12px/40px "Inter";
       color: #f86045; }
+
 #con1 .inner ul.panel {
   width: 50%;
   height: 250px;
@@ -570,6 +575,7 @@ section.con {
     transition: 0.5s; }
     #con1 .inner ul.panel .next:hover {
       border-left: 9px solid #f6492b; }
+
 #con1 .inner ul.circle_h {
   width: 100%;
   margin-bottom: 50px; }
@@ -592,6 +598,7 @@ section.con {
       color: #f2f2f2; }
     #con1 .inner ul.circle_h li:last-child {
       float: right; }
+
 #con1 .inner ul.circle {
   width: 100%;
   height: 300px;
@@ -602,7 +609,7 @@ section.con {
     clear: both; }
   #con1 .inner ul.circle li {
     float: left;
-    width: 33.3333333333%;
+    width: 33.33333%;
     height: 100%;
     padding: 50px 30px;
     box-sizing: border-box;
@@ -725,6 +732,7 @@ section.con {
   content: "";
   display: block;
   clear: both; }
+
 #con2 .inner .notice {
   width: 35%;
   float: left;
@@ -781,6 +789,7 @@ section.con {
           stroke: #f2f2f2;
           stroke-dashoffset: 0;
           transition: 0.2s; }
+
 #con2 .inner .community {
   width: 65%;
   float: left;
@@ -996,7 +1005,6 @@ section.con {
 @media screen and (max-width: 1179px) {
   #scrollNavi {
     display: none; }
-
   #header .inner {
     width: 100%;
     height: 140px; }
@@ -1065,14 +1073,11 @@ section.con {
       #header.on .inner .util {
         width: 50%;
         top: 30px; }
-
   .gnbBtn {
     right: 2%; }
-
   section.con .inner {
     width: 100%;
     padding: 80px 40px; }
-
   #visual .inner #tab .boxs > p {
     width: 100%;
     font-size: 47px;
@@ -1096,7 +1101,7 @@ section.con {
     width: 90%;
     height: 140px; }
     #visual .inner #tab .btns ul li {
-      width: 33.3333333333%;
+      width: 33.33333%;
       height: 100%;
       padding: 30px 30px; }
       #visual .inner #tab .btns ul li a span {
@@ -1108,7 +1113,6 @@ section.con {
         margin-bottom: 20px; }
       #visual .inner #tab .btns ul li a p {
         font: 200 12px/1 'Space Grotesk', sans-serif; }
-
   #con1 .inner {
     padding-top: 100px; }
     #con1 .inner .back {
@@ -1182,7 +1186,6 @@ section.con {
         clip-path: circle(130% at 80% 10%); }
       #con1 .inner ul.circle li.on:nth-of-type(3) .bg {
         clip-path: circle(130% at 80% 10%); }
-
   #con2 .inner {
     padding: 80px 40px; }
     #con2 .inner .notice {
@@ -1220,7 +1223,6 @@ section.con {
           font: 200 12px/1 "Inter"; }
         #con2 .inner .community > ul li a p:nth-of-type(2) {
           font: 100 10px/2 "Inter"; }
-
   #footer .inner {
     width: 100%;
     padding: 20px 40px;
@@ -1264,6 +1266,7 @@ section.con {
       #footer .inner .bottom ul.icon li {
         width: 50px;
         float: left; } }
+
 @media screen and (max-width: 539px) {
   #header .inner {
     height: 100px; }
@@ -1291,10 +1294,8 @@ section.con {
     #header.on .inner .util {
       width: 70%;
       top: 20px; }
-
   section.con .inner {
     padding: 80px 30px; }
-
   #visual .inner #tab .boxs > p {
     font-size: 40px; }
   #visual .inner #tab .boxs #number span {
@@ -1307,7 +1308,6 @@ section.con {
       margin-bottom: 0px; }
     #visual .inner #tab .btns ul li a p {
       display: none; }
-
   #con1 .inner {
     padding-top: 100px; }
     #con1 .inner .back {
@@ -1349,7 +1349,6 @@ section.con {
         clip-path: circle(130% at 80% 20%); }
       #con1 .inner ul.circle li.on:nth-of-type(3) .bg {
         clip-path: circle(130% at 80% 20%); }
-
   #con2 .inner {
     padding: 80px 30px; }
     #con2 .inner .notice {
@@ -1392,7 +1391,6 @@ section.con {
           margin-bottom: 0px; }
         #con2 .inner .community > ul li a p:nth-of-type(2) {
           display: none; }
-
   #footer .inner {
     padding: 20px 30px; }
     #footer .inner .top {
@@ -1403,5 +1401,3 @@ section.con {
         letter-spacing: 0px; }
       #footer .inner .top a {
         display: none; } }
-
-/*# sourceMappingURL=style.css.map */
